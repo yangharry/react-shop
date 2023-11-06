@@ -2,7 +2,7 @@
   "name": "react-shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://yangharry.github.io/react-shop",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
