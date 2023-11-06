@@ -67,7 +67,7 @@ function Cart() {
           </div>
           <div className="p-2 text-2xl font-bold">Cart가 비어있습니다.</div>
           <div className="p-2">Cart에 상품을 넣어주세요.</div>
-          <div className="underline p-2 cursor-pointer" onClick={() => navigate('/')}>
+          <div className="underline p-2 cursor-pointer" onClick={() => navigate('/react-shop')}>
             계속 쇼핑하기
           </div>
         </div>

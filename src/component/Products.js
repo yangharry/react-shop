@@ -58,7 +58,7 @@ function Products() {
                 className="p-2 w-48 h-48 object-fill cursor-pointer"
                 src={product.image}
                 alt={product.description}
-                onClick={() => navigate(`/detail/${product.id}`)}
+                onClick={() => navigate(`/react-shop/detail/${product.id}`)}
               />
               <div className="p-2 w-32 h-8 overflow-hidden text-ellipsis whitespace-nowrap text-center font-bold">
                 {product.title}
@@ -66,7 +66,7 @@ function Products() {
               <div className="p-2 flex w-full justify-between items-center">
                 <button
                   className="flex font-bold border-gray-500 text-gray-500 border text-sm p-2 px-6 rounded mr-4 items-center hover:bg-gray-500 hover:text-white"
-                  onClick={() => navigate(`/detail/${product.id}`)}
+                  onClick={() => navigate(`/react-shop/detail/${product.id}`)}
                 >
                   장바구니에 담기
                 </button>

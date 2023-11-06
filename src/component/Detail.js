@@ -40,7 +40,7 @@ function Detail() {
               장바구니에 담기
             </button>
           )}
-          <button className="bg-gray-500 text-white text-sm py-4 px-10" onClick={() => navigate('/cart')}>
+          <button className="bg-gray-500 text-white text-sm py-4 px-10" onClick={() => navigate('/react-shop/cart')}>
             장바구니로 이동
           </button>
         </div>

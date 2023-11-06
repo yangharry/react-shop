@@ -36,7 +36,7 @@ function Login() {
       logIn(email, password)
         .then((res) => {
           dispatch(setUser(res.user.uid));
-          navigate('/');
+          navigate('/react-shop');
         })
         .catch(() => {
           setIsStauts('loginError');
