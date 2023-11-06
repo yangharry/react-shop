@@ -24,10 +24,10 @@ function App() {
       <Suspense fallback={<div>...loading</div>}>
         <Routes>
           <Route path="*" element={<div>404 page</div>}></Route>
-          <Route path="/" element={<Products></Products>}></Route>
-          <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/detail/:id" element={<Detail></Detail>}></Route>
-          <Route path="/cart" element={<Cart></Cart>}></Route>
+          <Route path="/react-shop" element={<Products></Products>}></Route>
+          <Route path="/react-shop/login" element={<Login></Login>}></Route>
+          <Route path="/react-shopdetail/:id" element={<Detail></Detail>}></Route>
+          <Route path="/react-shop/cart" element={<Cart></Cart>}></Route>
         </Routes>
       </Suspense>
     </div>
