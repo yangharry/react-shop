@@ -90,7 +90,7 @@ function Login() {
           <div
             className={`${
               isStauts === 'success' ? 'bg-green-500' : isStauts === 'signinError' ? 'bg-yellow-500' : 'bg-red-500'
-            } rounded border w-full text-center py-4`}
+            } rounded border w-96 text-center py-4`}
           >
             {isStauts === 'success'
               ? '가입완료! 로그인하세요!'
