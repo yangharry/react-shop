@@ -9,7 +9,7 @@ function Detail() {
   const product = useSelector((state) => state.products.find((product) => product.id === Number(id)));
   const cart = useSelector((state) => state.cart.find((product) => product.id === Number(id)));
   return (
-    <div className="w-full flex p-10">
+    <div className="w-full flex p-10 max-w-screen-lg m-auto">
       <div className="w-2/5">
         <img src={product.image} alt={product.description} />
       </div>
