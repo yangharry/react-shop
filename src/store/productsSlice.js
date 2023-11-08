@@ -9,6 +9,4 @@ let products = createSlice({
   reducers: {},
 });
 
-export let { setProductsSlice } = products.actions;
-
 export default products;

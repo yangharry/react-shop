@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import bigCartIamge from '../assets/shopping-bigcart.png';
 import { useNavigate } from 'react-router-dom';
 import trashIamge from '../assets/trash-2.png';
-import { minusAmount, plusAmount, removeFromCart, setCart } from '../store/cartSlice';
+import { inputAmount, minusAmount, plusAmount, removeFromCart, setCart } from '../store/cartSlice';
 
 function Cart() {
   const navigate = useNavigate();
@@ -42,6 +42,7 @@ function Cart() {
                     type="number"
                     className="border-2 inline-block w-10 h-10 m-1 text-center"
                     value={product.amount}
+                    onChange={(e) => dispatch(inputAmount({ id: product.id, input: e.target.value }))}
                   />
                   <button
                     className="border-2 inline-block w-10 h-10 m-1"

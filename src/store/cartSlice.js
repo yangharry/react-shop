@@ -1,15 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { createSlice } from '@reduxjs/toolkit';
-if (sessionStorage.getItem('cart') == null) {
-  sessionStorage.setItem('cart', JSON.stringify([]));
-}
 
 let cart = createSlice({
   name: 'cart',
-  initialState: JSON.parse(sessionStorage.getItem('cart')),
+  initialState: [],
   reducers: {
     setCart(state, action) {
-      sessionStorage.removeItem('cart');
       return [];
     },
     addToCart(state, action) {
@@ -37,9 +33,17 @@ let cart = createSlice({
         product.amount--;
       }
     },
+    inputAmount(state, action) {
+      let product = state.find((product) => product.id === action.payload.id);
+      if (action.payload.input < 0) {
+        product.amount = 0;
+      } else {
+        product.amount = action.payload.input;
+      }
+    },
   },
 });
 
-export let { addToCart, removeFromCart, plusAmount, minusAmount, setCart } = cart.actions;
+export let { addToCart, removeFromCart, plusAmount, minusAmount, setCart, inputAmount } = cart.actions;
 
 export default cart;

@@ -12,7 +12,7 @@ function PreviewCart() {
   return (
     <div className="w-96 absolute text-xs shadow-md right-5 top-6 bg-white">
       {cart.map((product) => (
-        <div className="w-full flex border-b p-1">
+        <div className="w-full flex border-b p-1" key={product.id}>
           <div className="p-2">
             <img src={product.image} alt={product.image} width={70} />
           </div>
