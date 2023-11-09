@@ -42,7 +42,7 @@ function Navbar() {
               {cart.length}
             </div>
           )}
-          {isHovering && <PreviewCart />}
+          {cart.length !== 0 && isHovering && <PreviewCart />}
           <img
             className="cursor-pointer "
             src={cartIamge}
